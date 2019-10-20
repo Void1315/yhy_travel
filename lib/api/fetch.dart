@@ -5,15 +5,13 @@
  * @Company: didi
  * @Date: 2019-10-20 14:34:16
  * @LastEditors: 脑瘫码农
- * @LastEditTime: 2019-10-20 18:17:19
+ * @LastEditTime: 2019-10-20 18:25:55
  * @Description: Fetch类是Dio的封装，采用单例模式。
  */
-import 'dart:convert' show JsonCodec;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:dio/dio.dart';
 import 'package:dio/native_imp.dart';
 import 'package:yhy_travel/config/env.dart';
-import 'package:yhy_travel/models/user/user_model.dart';
 
 class Fetch extends DioForNative {
 
