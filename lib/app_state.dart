@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yhy_travel/models/theme_model.dart';
+import 'package:yhy_travel/models/theme/theme_model.dart';
 import 'actions/theme_action.dart';
 
 class AppState {
