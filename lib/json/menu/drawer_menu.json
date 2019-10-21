@@ -1,17 +1,26 @@
 [
     {
-        "name":"首页",
-        "path":"/to/path",
+        "id":0,
+        "title":"首页",
+        "path":"/",
         "icon":"home"
     },
     {
-        "name":"首页",
-        "path":"/to/path",
-        "icon":"home"
+        "id":1,
+        "title":"历史记录",
+        "path":"/history",
+        "icon":"history"
     },
     {
-        "name":"首页",
-        "path":"/to/path",
-        "icon":"home"
+        "id":2,
+        "title":"我的订单",
+        "path":"/my_order",
+        "icon":"reorder"
+    },
+    {
+        "id":3,
+        "title":"我的行程",
+        "path":"/my_stroke",
+        "icon":"subway"
     }
 ]

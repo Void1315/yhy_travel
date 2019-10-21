@@ -5,7 +5,7 @@
  * @Company: didi
  * @Date: 2019-10-20 13:52:33
  * @LastEditors: 脑瘫码农
- * @LastEditTime: 2019-10-21 20:18:09
+ * @LastEditTime: 2019-10-21 20:37:05
  * @Description: 文件描述
  */
 import 'package:yhy_travel/models/base_model.dart';
@@ -39,5 +39,9 @@ class UserModel extends Model{
   Map<String, dynamic> toJson() => {
         'name': userName,
         'email': userEmail,
+        'id':userId,
+        'gender':userGender,
+        'avatar':userAvatar,
+        'phone':userPhone
       };
 }
