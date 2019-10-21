@@ -5,7 +5,7 @@
  * @Company: didi
  * @Date: 2019-10-20 13:52:33
  * @LastEditors: 脑瘫码农
- * @LastEditTime: 2019-10-20 15:11:40
+ * @LastEditTime: 2019-10-21 20:18:09
  * @Description: 文件描述
  */
 import 'package:yhy_travel/models/base_model.dart';

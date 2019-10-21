@@ -23,7 +23,7 @@ class DrawerTopCard extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Icon(
-                      Icons.ac_unit,
+                      Icons.turned_in,
                       color: Theme.of(context).cardColor,
                       size: 30,
                     ),
@@ -31,7 +31,7 @@ class DrawerTopCard extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Icon(
-                      Icons.ac_unit,
+                      Icons.visibility,
                       color: Theme.of(context).cardColor,
                       size: 30,
                     ),
