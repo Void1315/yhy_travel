@@ -9,6 +9,14 @@ class DrawerMenuModel extends Model {
   String path; // 跳转地址
   String icon; // 表现图标
 
+  DrawerMenuModel({this.id,this.title,this.path,this.icon});
+  DrawerMenuModel.fromMap(map){
+    this.id = map['id'];
+    this.path = map['path'];
+    this.title = map['title'];
+    this.icon = map['icon'];
+  }
+
   DrawerMenuModel.init() {
     DrawerMenuModel.fromJson(this._initData());
   }
