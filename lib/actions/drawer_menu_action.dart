@@ -1,12 +1,11 @@
 import 'dart:convert' show JsonCodec;
 
-import 'package:dio/src/response.dart';
 import 'package:redux/redux.dart';
 import 'package:redux_thunk/redux_thunk.dart';
 import 'package:yhy_travel/api/apis.dart';
 import 'package:yhy_travel/app_state.dart';
-import 'package:yhy_travel/models/menu/drawer_model.dart';
-import 'package:yhy_travel/states/drawer_menu_state.dart';
+import 'package:yhy_travel/states/exports.dart';
+import 'package:yhy_travel/models/exports.dart';
 
 class SetDrawerMenuAction {
   DrawerMenuState state;
@@ -29,9 +28,9 @@ class SetFromJsonAction {
   }
 }
 
-ThunkAction<AppState> waitAndDispatch = (Store<AppState> store) async {
-  Response res = await API.getDrawerMenu();
-  List json = JsonCodec().decode(res.data);
+ThunkAction<AppState> getDrawerMenuData = (Store<AppState> store) async {
+  String res = (await API.getDrawerMenu()).data;
+  List json = JsonCodec().decode(res);
   store.dispatch(SetFromJsonAction(json));
 };
 

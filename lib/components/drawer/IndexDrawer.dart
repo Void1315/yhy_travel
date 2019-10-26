@@ -1,12 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
-import 'package:yhy_travel/actions/drawer_menu_action.dart';
 import 'package:yhy_travel/app_state.dart';
 import 'package:yhy_travel/components/drawer_top_card/drawer_top_card.dart';
-import 'package:yhy_travel/states/drawer_menu_state.dart';
-
+import 'package:yhy_travel/actions/exports.dart';
+import 'package:yhy_travel/states/exports.dart';
 class IndexDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +12,7 @@ class IndexDrawer extends StatelessWidget {
       child: StoreConnector<AppState, _ViewModel>(
         onInit: (store){
           if(store.state.drawerMenuState.drawerMenuList.length==0)
-            store.dispatch(waitAndDispatch);
+            store.dispatch(getDrawerMenuData);
         },
         converter: (store) {
           return _ViewModel.create(store);
