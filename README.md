@@ -1,6 +1,5 @@
 # yhy_travel
 毕业设计，一个flutter应用，简单的实现出行买票。
-<<<<<<< HEAD
 ## 依赖
 ```yaml
 environment:
@@ -25,6 +24,3 @@ cd yhy_travel
 flutter pub get
 ```
 ## 测试
-=======
-## run
->>>>>>> parent of e0ad136... 修改readme文件
