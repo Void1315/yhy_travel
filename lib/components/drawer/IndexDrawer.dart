@@ -13,6 +13,7 @@ class IndexDrawer extends StatelessWidget {
         onInit: (store){
           if(store.state.drawerMenuState.drawerMenuList.length==0)
             store.dispatch(getDrawerMenuData);
+            print(getDrawerMenuData);
         },
         converter: (store) {
           return _ViewModel.create(store);

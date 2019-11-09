@@ -9,7 +9,6 @@
  * @Description: 使用单例模式的配置文件，
  */
 class Env {
-  static String DIR_PATH;// 项目路径
   static bool IS_DEVELOPMENT = true; // 是否为开发环境
   factory Env() => _getInstance();
   static Env get instance => _getInstance();
@@ -17,7 +16,6 @@ class Env {
   Env._internal() {
     // 初始化
   }
-
   static Env _getInstance() {
     if (_instance == null) {
       _instance = new Env._internal();

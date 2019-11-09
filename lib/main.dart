@@ -1,3 +1,12 @@
+/*
+ * @Author: 脑瘫码农
+ * @Email: yuhaoyan_i@didiglobal.com
+ * @Company: didi
+ * @Date: 2019-10-26 23:46:42
+ * @LastEditors: 脑瘫码农
+ * @LastEditTime: 2019-11-09 14:10:16
+ * @Description: 主入口
+ */
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_redux/flutter_redux.dart';
@@ -8,7 +17,7 @@ import 'package:yhy_travel/config/env.dart';
 import './config/routers.dart' as Routers;
 
 main() {
-  debugPaintSizeEnabled = true;
+  // debugPaintSizeEnabled = true; // 显示网格线
   Env(); // 初始化Env配置文件
   runApp(MyApp());
 }

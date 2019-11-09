@@ -14,7 +14,7 @@ import 'package:dio/native_imp.dart';
 import 'package:yhy_travel/config/env.dart';
 
 class Fetch extends DioForNative {
-
+  static const FIX = "lib/json";
   factory Fetch()=>_getInstance();
   static Fetch get instance => _getInstance();
   static Fetch _instance;
@@ -44,10 +44,8 @@ class Fetch extends DioForNative {
     }
     return options;
   }
-
-  _readJsonFile(String file_path) async{
-    const fix = "lib/json";
-    final String json = await rootBundle.loadString(fix+file_path+".json");
+  _readJsonFile(String filePath) async{
+    final String json = await rootBundle.loadString(FIX+filePath+".json");
     return json;
   }
 
