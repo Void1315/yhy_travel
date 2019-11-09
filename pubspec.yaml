@@ -47,7 +47,10 @@ flutter:
   assets:
    - lib/json/user/info.json
    - lib/json/menu/drawer_menu.json
-
+  fonts:
+    - family: MyIcons
+      fonts:
+      - asset: lib/assets/icons/iconfont.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
