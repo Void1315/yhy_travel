@@ -4,11 +4,10 @@
  * @Company: didi
  * @Date: 2019-10-26 23:46:42
  * @LastEditors: 脑瘫码农
- * @LastEditTime: 2019-11-09 14:10:16
+ * @LastEditTime: 2019-11-09 14:15:45
  * @Description: 主入口
  */
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:redux_thunk/redux_thunk.dart';
